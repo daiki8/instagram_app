@@ -21,6 +21,7 @@ RUN \
   chmod uog+r /etc/gemrc && \
   bundle config --global build.nokogiri --use-system-libraries && \
   bundle config --global jobs 4 && \
+  # error対策
   bundle update activesupport && \
   bundle install && \
   rm -rf ~/.gem
