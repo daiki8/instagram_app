@@ -1,1 +1,7 @@
 <h1>home</h1>
+
+<% if logged_in? %>
+  <%= render 'static_pages/logged_in' %>
+<% else %>
+  <%= render 'static_pages/without_logged_in' %>
+<% end %>
