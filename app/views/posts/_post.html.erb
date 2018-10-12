@@ -1,4 +1,8 @@
-<li>
-    <%= post.title %>
-    <%= image_tag post.picture.url if post.picture? %>
-<li>
+<div class="col-sm-4">
+    <div class="card bg-success text-center">
+        <%= image_tag post.picture.url, class: 'card-img-top' if post.picture? %>
+        <div class="card-body">
+            <h5 class="card-title"><%= post.title %></h5>
+        </div>
+    </div>
+</div>
