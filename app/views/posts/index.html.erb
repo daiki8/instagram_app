@@ -5,5 +5,7 @@
         <div class="card-columns">
             <%= render @posts %>
         </div>
+        <%= will_paginate(@posts, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, \
+        class:'justify-content-md-center') %>
     </div>
 </div>
