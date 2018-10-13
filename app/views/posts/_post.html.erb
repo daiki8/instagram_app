@@ -1,6 +1,4 @@
-<div class="card bg-light text-center">
-    <%= image_tag post.picture.url, class: 'card-img-top' if post.picture? %>
-    <div class="card-body">
-        <h5 class="card-title"><%= post.title %></h5>
-    </div>
+<div class="bg-light text-center border mb-4" style="min-height:10rem; width:30%;">
+    <h5><%= post.title %></h5>
+    <%= image_tag post.picture.url if post.picture? %>
 </div>
