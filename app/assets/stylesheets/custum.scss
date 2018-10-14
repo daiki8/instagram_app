@@ -1,5 +1,20 @@
 @import "bootstrap";
 
+.message{
+  z-index: -1;
+  position: relative;
+  opacity: 0.8;
+  animation: sample 1s ease 0s 1 alternate none running;
+}
+
+@keyframes sample {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 /*    css reset    */
 /*

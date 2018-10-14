@@ -12,9 +12,18 @@
     <%= render 'layouts/header' %>
     <div class="container">
       <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type} message") %>
       <% end %>
       <%= yield %>
     </div>
   </body>
 </html>
+
+<script type="text/javascript">
+    $('.message').bind('change', function() {
+        var size_in_megabytes = this.files[0].size/1024/1024;
+        if (size_in_megabytes > 5) {
+        alert('Maximum file size is 5MB. Please choose a smaller file.');
+        }
+    });
+</script>
