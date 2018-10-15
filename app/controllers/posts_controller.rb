@@ -12,7 +12,7 @@ class PostsController < ApplicationController
           flash[:success] = "Post created!"
           redirect_to posts_path
         else
-          @posts = []  # postsがnilになるのを防ぐための一時的な対策
+          @posts = Post.paginate(page: params[:page], :per_page => 18)  # postsがnilになるのを防ぐための一時的な対策
           render 'posts/index'
         end
       end
