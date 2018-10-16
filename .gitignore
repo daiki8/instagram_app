@@ -23,4 +23,5 @@
 .byebug_history
 
 # Ignore all picture
-/public/uploads/post/picture/*
+/public/uploads/post/*
+/public/uploads/tmp/*
