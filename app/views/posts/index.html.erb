@@ -1,9 +1,11 @@
 <div class="row justify-content-center">
     <div class="col-6 col-offset-3">
         <h1>posts index</h1>
-        <div class="mb-4">
-            <%= render 'post_form' %>
-        </div>
+        <% if logged_in? %>
+            <div class="mb-4">
+                <%= render 'post_form' %>
+            </div>
+        <% end %>
         <div class="row justify-content-between">
             <%= render @posts %>
         </div>
