@@ -1,4 +1,4 @@
-<div class="bg-light text-center border mb-4" style="min-height:10rem; width:30%;">
-    <h5><%= post.title %></h5>
-    <%= image_tag post.picture.url if post.picture? %>
+<div class="bg-light text-center border mb-4" style="height:auto; width:30%;">
+    <h5 style="font-size: 1vw;"><%= post.title %></h5>
+    <%= image_tag post.picture.url, style:"max-width:100%; height:auto;" if post.picture? %>
 </div>
