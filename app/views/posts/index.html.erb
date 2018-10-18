@@ -6,7 +6,7 @@
                 <%= render 'post_form' %>
             </div>
         <% end %>
-        <div class="d-flex flex-row justify-content-between align-self-stretch flex-wrap">
+        <div class="d-flex flex-row justify-content-between align-self-stretch flex-wrap" id="posts-container">
             <%= render @posts %>
         </div>
         <%= will_paginate(@posts, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
