@@ -16,6 +16,9 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
 
+# error対策 (Could not find i18n-1.1.0 in any of the sources)
+gem 'i18n', '1.1'
+
 group :development, :test do
   #gem 'sqlite3', '1.3.13'
   gem 'mysql2'
