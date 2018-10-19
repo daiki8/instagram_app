@@ -1,7 +1,7 @@
 <div class="bg-light text-center rounded" style="margin-bottom:2vw; width:30%; overflow:hidden;">
     <h5 style="font-size: 1vw;"><%= post.title %></h5>
-    <% if post.picture? %>
-        <%= image_tag post.picture.url, style:"width:217px; height:217px;" %>
+    <% if post.picture.present? %>
+        <%= image_tag post.picture.url(:card), style:"width:100%; height:auto" %>
     <% else %>
     <%= image_tag "https://placehold.jp/217x217.png", style:"max-width:100%; height:auto", class:"post_image" %>
     <% end %>
