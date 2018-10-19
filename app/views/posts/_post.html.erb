@@ -1,5 +1,5 @@
-<div class="bg-light text-center rounded" style="margin-bottom:2vw; width:30%; overflow:hidden;">
-    <h5 style="font-size: 1vw;"><%= post.title %></h5>
+<div class="bg-light text-center text-justify rounded" style="margin-bottom:2vw; width:30%; overflow:hidden;">
+    <h5 style="font-size: 1vw; margin:2% 0;"><%= post.title %></h5>
     <% if post.picture.present? %>
         <%= image_tag post.picture.url(:card), style:"width:100%; height:auto" %>
     <% else %>
