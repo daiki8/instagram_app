@@ -1,8 +1,8 @@
-<div class="bg-light text-center text-justify rounded" style="margin-bottom:2vw; width:30%; overflow:hidden;">
+<div class="bg-light text-center text-justify rounded" style="margin-bottom:0.5vw; width:33%; overflow:hidden;">
     <h5 style="font-size: 1vw; margin:2% 0;"><%= post.title %></h5>
     <% if post.picture.present? %>
         <%= image_tag post.picture.url(:card), style:"width:100%; height:auto" %>
     <% else %>
-    <%= image_tag "https://placehold.jp/217x217.png", style:"max-width:100%; height:auto", class:"post_image" %>
+    <%= image_tag "https://placehold.jp/217x217.png", style:"width:100%; height:auto", class:"post_image" %>
     <% end %>
 </div>
