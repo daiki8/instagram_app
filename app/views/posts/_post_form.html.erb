@@ -1,7 +1,7 @@
 <%= form_for(@post) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="form-group">
-        <%= f.text_field :title, placeholder: "Compose new post title...", class: 'form-control' %>
+        <%= f.text_field :title, placeholder: "Compose new post title...", maxlength: "20", class: 'form-control' %>
         <span class="picture">
             <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
         </span>
