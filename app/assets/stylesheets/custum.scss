@@ -28,10 +28,19 @@
 /**
  post layout
 **/
+
 .post {
-  margin-bottom:0.5vw; 
-  width:33%; 
-  overflow:hidden;
+  margin-bottom: 0.5vw; 
+  width: 33%; 
+  overflow: hidden;
+}
+
+@include media-breakpoint-down(sm) {
+  .post {
+    margin-bottom:0.5vw; 
+    width:48%; 
+    overflow:hidden;
+  }
 }
 
 .post_title {
