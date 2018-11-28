@@ -34,7 +34,7 @@
 
 @include media-breakpoint-up(sm) {
   .post {
-    margin-bottom: 0.5vw; 
+    margin-bottom: 3.5vw; 
     width: 33%; 
     overflow: hidden;
   }
@@ -52,7 +52,7 @@
 
 @include media-breakpoint-down(sm) {
   .post {
-    margin-bottom: 0.5vw;
+    margin-bottom: 3.5vw;
     width: 48%;
     overflow: hidden;
   }
